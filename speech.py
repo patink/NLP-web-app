@@ -4,7 +4,7 @@ import speech_recognition as sr
 def takecomand():
     r=sr.Recognizer()
     with sr.Microphone() as source:
-        st.write("YOU MAY SPEAK...")
+        st.write("YSTART SPEAKING!")
         audio=r.listen(source)
         try:
             text=r.recognize_google(audio)
