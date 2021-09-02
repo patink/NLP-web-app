@@ -4,13 +4,13 @@ import speech_recognition as sr
 def takecomand():
     r=sr.Recognizer()
     with sr.Microphone() as source:
-        st.write("YSTART SPEAKING!")
+        st.write("START SPEAKING!")
         audio=r.listen(source)
         try:
             text=r.recognize_google(audio)
             st.write("You  said :",text)
         except:
-            st.write("Please say again ..")
+            st.write("Please say again ...")
         return text
 st.write("""
 # SPEECH RECOGNITION USING DEEP LEARNING
