@@ -12,9 +12,4 @@ def takecomand():
         except:
             st.write("Please say again ...")
         return text
-st.write("""
-# SPEECH RECOGNITION USING DEEP LEARNING
-This web-app detects speech and converts them into **Text**!
-""")
-if st.button("Click me"):
-    takecomand()
+
